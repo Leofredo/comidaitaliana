@@ -1,0 +1,50 @@
+<div class="ae-grid au-xs-ta-center au-mb-4 animated fadeIn">
+  <div class="ae-grid au-pt-2">
+    <div class="ae-grid__item item-lg-8 item-lg--offset-2">
+      <h4 class="ae-u-bolder">QUIENES SOMOS</h4>
+      <p>somos una agencia prestadora de servicios digitales en Colombia, actualmente posicionada como líderes en el mercado
+        al ofrecer soluciones integrales en lo que a paginas web digitales se refiere. Tomamos cada proyecto como único y
+        especial, por eso contamos con un equipo de profesionales multidisciplinares capaces de ejecutar diagnósticos ajustables
+        a las necesidades de cada cliente.</p>
+    </div>
+    <div *ngFor="let miembro of _is.nosotros"
+     class="ae-grid__item item-lg-4 ae-kappa au-mb-3">
+      <img [src]="miembro.url" alt="" class="au-mb-3">
+      <h5 class="ae-u-bolder au-mt-2">{{ miembro.nombre }}</h5>
+      <p class="ae-u-bolder au-mb-3">{{ miembro.subtitulo }}</p>
+      <p class="au-lg-ta-left au-mb-3 au-pl-4 au-pr-4">
+        {{ miembro.descripcion }}</p>
+      <a href="#0" class="ae-u-bolder au-underline">{{ miembro.twitter }}</a>
+    </div>
+  </div>
+  <div class="ae-grid ae-grid--alt au-xs-ptp-1">
+    <div class="ae-grid__item--alt item-lg-4">
+      <h6 class="ae-u-boldest">COMPROMISO</h6>
+      <p class="au-lh-3">Desde el momento en que nuestros clientes optan por hacer parte del equipo, nuestro compromiso es de por vida, el acompañamiento
+        es permanente al darle solución a todas sus necesidades inmediatas y futuras. </p>
+    </div>
+    <div class="ae-grid__item--alt item-lg-4">
+      <h6 class="ae-u-boldest">GARANTIA</h6>
+      <p class="au-lh-3">Los resultados deben mantenerse y mejorarse con el transcurso del tiempo, apoyamos a nuestros clientes implementando
+        soporte inmediato ante cualquier problema o inquietud.</p>
+    </div>
+    <div class="ae-grid__item--alt item-lg-4">
+      <h6 class="ae-u-boldest">EXPERIENCIA</h6>
+      <p class="au-lh-3">Nuestros casos de éxito y los profesionales que conforman el equipo nos han proporcionado gran experiencia brindando
+        confianza a nuestros clientes y aumento en la credibilidad de sus marcas. </p>
+    </div>
+    <div class="ae-grid__item--alt item-lg-4">
+      <h6 class="ae-u-boldest">RESPALDO</h6>
+      <p class="au-lh-3">Estamos siempre dispuestos a hacer de cada proyecto una experiencia única, además, contamos con un equipo de expertos,
+        para garantizar el éxito de cada negocio a bajo costo y alta rentabilidad.</p>
+    </div>
+  </div>
+  <p class="au-flex au-pt-4 group-buttons">
+    <a href="portfolio.html" class="au-mt-4 arrow-button arrow-button--right arrow-button--out">View Our Portfolio
+      <span class="arrow-cont">
+        <svg>
+          <use xlink:href="assets/img/symbols.svg#arrow"></use>
+        </svg>
+      </span>
+    </a>
+  </p>
