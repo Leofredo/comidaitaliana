@@ -8,6 +8,6 @@ import { Component } from '@angular/core';
 })
 export class PortafolioComponent  {
 
-  constructor(private _ps: ProductosService) { }
+  constructor(public _ps: ProductosService) { }
 
 }

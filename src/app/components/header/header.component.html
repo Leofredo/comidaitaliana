@@ -23,22 +23,18 @@
           <a routerLink="about" class="rk-menu__link">Sobre Nosotros</a>
         </li>
       </ul>
-      <form class="rk-search">
-        <input type="text" placeholder="Search" id="urku-search" class="rk-search-field">
+      <div class="rk-search">
+        <input name="buscar"
+          (keyup.enter)="buscar_producto( buscarTexto.value )" 
+          #buscarTexto
+        
+        type="text" placeholder="Buscar..." id="urku-search" class="rk-search-field">
         <label for="urku-search">
           <svg>
             <use xlink:href="assets/img/symbols.svg#icon-search"></use>
           </svg>
         </label>
-      </form>
+      </div>
     </nav>
   </div>
 </header>
-
-<!-- <button md-fab [mdMenuTriggerFor]="home">
- <md-icon class="md-24" aria-label="Home principal"><i class="material-icons">insert_emoticon</i></md-icon>
-</button>
-<md-menu #home="mdMenu">
-  <button routerLink="students/index" md-menu-item>students</button>
-  <button routerLink="notes/add" md-menu-item>notes</button>
-</md-menu> -->

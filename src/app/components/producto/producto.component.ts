@@ -10,24 +10,21 @@ import { ProductosService } from '../../services/productos.service';
 })
 export class ProductoComponent {
 
-  producto: any = undefined;
-  cod: string = undefined;
+  producto:any = undefined;
 
   constructor( private route: ActivatedRoute,
-               private _ps: ProductosService ) {
+               private _ps: ProductosService ) { 
 
-    route.params.subscribe( parametros => {
+    route.params.subscribe( parametros =>{
 
       //  console.log( parametros )
       //  console.log( parametros['id'] );
 
-        _ps.cargar_producto(parametros['id'])
+        _ps.cargar_producto(parametros[ 'id' ])
         .subscribe(res => {
 
+        console.log(res.json());
 
-        this.cod = parametros['id'];
-        this.producto = res.json();
-          console.log(this.producto);
 
         });
 
